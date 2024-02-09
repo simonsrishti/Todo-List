@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto';
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+.t0Do{margin-top: 70px;
+  }
+.toDoCard{
+  width: 40%;
+  margin: auto;
+  background-color: #090979;
+  opacity: 0.65;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0.8em;
+  height: 60vh;
+  }
+  @media screen and (max-width: 640px) {
+    .toDoCard{
+      width: 70%;
+      height: 45vh;
+    }
+  }
+  .toDoCard h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+  .input-toDo{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .input-toDo input{
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+    font-size: 18px;
+    font-family: 'roboto';
+    border-top-left-radius: 0.3em ;
+    border-bottom-left-radius: 0.3em ;
+    font-weight: 900;
+  }
+  ::placeholder{
+    font-weight: 900;
+  }
+  .input-toDo #addButton{
+    background-color:rgb(249, 162, 0);
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 18px;
+    cursor: pointer;
+    border-top-right-radius: 0.3em ;
+    border-bottom-right-radius: 0.3em ;
+  }
+#toDoContainer{
+  list-style: none;
+  width: 80%;
+  margin: auto;
+}
+#toDoContainer li{
+  font-size: 23px;  
+  margin: auto;
+  text-align: start;
+  font-weight: 700;
+  padding: 5px;
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#toDoContainer li:nth-child(odd){
+background-color: orange;
+}
+#toDoContainer li:nth-child(even){
+  background-color:#020024;
+  color: aliceblue;
+}
+#toDoContainer i{
+  color: red;
+  cursor: pointer;
+}
